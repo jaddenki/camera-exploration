@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo session</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="page page-room">
+    <main class="shell room-shell">
+      <section class="card room-card">
+        <header class="room-top">
+          <span id="deviceLabel" class="device-label">laptop host</span>
+        </header>
+
+        <div class="room-meta">
+          <p class="muted">room code</p>
+          <p id="roomCodeDisplay" class="room-code">------</p>
+          <p id="joinUrlText" class="join-url"></p>
+          <div id="qrWrap" class="qr-wrap"></div>
+        </div>
+
+        <div class="status-wrap">
+          <span id="statusBadge" class="status-badge status-yellow">connecting</span>
+        </div>
+
+        <div class="video-grid">
+          <section class="video-card">
+            <p id="localLabel" class="video-label">laptop cam</p>
+            <video id="localVideo" autoplay playsinline muted></video>
+          </section>
+          <section class="video-card">
+            <p id="remoteLabel" class="video-label">phone cam</p>
+            <video id="remoteVideo" autoplay playsinline></video>
+          </section>
+        </div>
+
+        <div class="room-actions">
+          <button id="rejoinBtn" class="small-btn">rejoin</button>
+          <a href="/" class="small-link">back to home</a>
+        </div>
+
+        <p id="roomError" class="error-message" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="/room.js"></script>
+  </body>
+</html>

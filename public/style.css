@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Redaction20";
+  src: url("/Redaction_20-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Redaction20";
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+}
+
+.page {
+  padding: 8px;
+}
+
+.page-room {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shell {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 8px;
+}
+
+.landing-card {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.actions {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.big-btn,
+.small-btn {
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.big-btn {
+  font-size: 16px;
+}
+
+.join-form {
+  text-align: left;
+}
+
+.join-form label {
+  font-size: 16px;
+}
+
+.join-row {
+  margin-top: 6px;
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  border: none;
+  background: #f2f2f2;
+  color: #000;
+  padding: 12px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.small-btn {
+  font-size: 16px;
+}
+
+.message,
+.error-message,
+.small-link,
+.join-url,
+.muted {
+  font-size: 16px;
+}
+
+.room-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.device-label {
+  font-size: 16px;
+}
+
+.room-code {
+  margin: 2px 0 8px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+}
+
+.qr-wrap {
+  width: 180px;
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+}
+
+.status-green {
+  background: #000;
+  color: #fff;
+}
+
+.video-grid {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  min-height: 0;
+}
+
+.video-label {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  display: block;
+  background: #000;
+  object-fit: cover;
+}
+
+.room-actions {
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.small-link {
+  color: #000;
+}
+
+.page-room .room-shell,
+.page-room .room-card {
+  height: calc(100vh - 16px);
+}
+
+.page-room .room-card {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto auto;
+  gap: 0;
+}
+
+.page-room .video-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}

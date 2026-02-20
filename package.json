@@ -1,0 +1,20 @@
+{
+  "name": "camera-exploration",
+  "version": "1.0.0",
+  "description": "jadden is exploring video streaming 0_0",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "webrtc",
+    "express",
+    "ws"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "ws": "^8.19.0"
+  }
+}
